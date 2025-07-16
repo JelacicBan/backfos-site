@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   enterBtn.addEventListener("click", () => {
     container.style.display = "none";
+    entryFrame.src = "/entrypage.html";// set iframe source
     entryFrame.style.display = "block";
 
-    // Start music on Enter
     if (window.startMusicAfterEnter) {
       window.startMusicAfterEnter();
     }
