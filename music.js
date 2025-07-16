@@ -2,20 +2,20 @@ const songs = [
   {
     title: "Me Gusta",
     artist: "DTF",
-    src: "/sites/haupt/src/audio/DTF - Me Gusta [Clip Officiel].mp3",
-    cover: "/sites/haupt/src/img/image.png"
+    src: "src/audio/DTF - Me Gusta [Clip Officiel].mp3",
+    cover: "src/img/image.png"
   },
   {
     title: "Dva i Dva",
     artist: "Crvena Jabuka",
-    src: "/sites/haupt/src/audio/Crvena jabuka - Dva i dva (i ona mala barka) (Official lyric video).mp3",
-    cover: "/sites/haupt/src/img/jabuka.png"
+    src: "src/audio/Crvena jabuka - Dva i dva (i ona mala barka) (Official lyric video).mp3",
+    cover: "src/img/jabuka.png"
   },
   {
     title: "Adrenalina",
     artist: "RELJA",
-    src: "/sites/haupt/src/audio/RELJA - ADRENALINA (OFFICIAL VIDEO) 4K.mp3",
-    cover: "/sites/haupt/src/img/limage.png"
+    src: "src/audio/RELJA - ADRENALINA (OFFICIAL VIDEO) 4K.mp3",
+    cover: "src/img/limage.png"
   }
 ];
 
