@@ -3,42 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Backfos</title>
 </head>
 <body>
 
-  <!-- Landing Page Container -->
   <div class="container">
     <button id="enter-btn">Enter</button>
   </div>
 
-  <!-- iframe after entering -->
-  <iframe id="entry-frame" src="/entrypage.html" style="display:none; width:100vw; height:100vh; border:none;"></iframe>
+  <iframe id="entry-frame" src="" style="display:none; width:100vw; height:100vh; border:none;"></iframe>
 
-  <!-- Audio Player -->
   <audio id="bg-music" loop></audio>
 
-  <!-- Music Info Widget -->
   <div class="music-widget">
-    <img src="/src/img/image.png" class="cover-art" />
+    <img src="src/img/image.png" class="cover-art" />
     <div class="song-info">
       <span class="song-title"></span>
       <span class="song-artist"></span>
     </div>
   </div>
 
-  <!-- Music Controls -->
   <div id="music-controls">
     <button id="toggle-btn">▶️</button>
     <button id="next-btn">⏭️</button>
   </div>
 
-  <!-- Scroll to Top -->
   <button id="top-btn">↑</button>
 
-  <!-- Scripts -->
-  <script src="/music.js"></script>
-  <script src="/enter.js"></script>
+  <script src="music.js"></script>
+  <script src="enter.js"></script>
 </body>
 </html>
