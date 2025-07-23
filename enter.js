@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   enterBtn.addEventListener("click", () => {
     container.style.display = "none";
-    entryFrame.src = "entrypage.html"; // ✅ relativer Pfad
+    entryFrame.src = "/entrypage.html"; // ✅ relativer Pfad
     entryFrame.style.display = "block";
 
     if (window.startMusicAfterEnter) {
