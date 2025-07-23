@@ -103,11 +103,15 @@ h2 {
 }
 
 .card {
+  position: relative; /* important for footer positioning */
   background-color: #161616;
-  padding: 1rem;
+  padding: 1rem 1rem 3.5rem; /* add bottom padding for footer */
   border: 1px solid #333;
   border-radius: 6px;
   transition: transform 0.3s ease, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .card:hover {
@@ -123,6 +127,38 @@ h2 {
 .card p {
   color: #aaa;
   font-size: 0.95rem;
+  flex-grow: 1; /* push footer down */
+}
+
+/* === Card Footer - Buttons at bottom === */
+.card-footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  text-align: center;
+}
+
+.card-footer .install-btn {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #00ff00;
+  background: transparent;
+  color: #00ff00;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-footer .install-btn:hover:not(:disabled) {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.card-footer .install-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 /* === Connect Section === */
@@ -261,7 +297,6 @@ footer {
   background-color: #00cc00;
   transform: scale(1.05);
 }
-
 
 @media (max-width: 600px) {
   .music-widget {
